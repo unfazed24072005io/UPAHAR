@@ -2,7 +2,7 @@ const yauzl = require('yauzl');
 const fs = require('fs');
 const path = require('path');
 
-yauzl.open('app.zip', { lazyEntries: true }, (err, zipfile) => {
+yauzl.open('User app.zip', { lazyEntries: true }, (err, zipfile) => {
   if (err) throw err;
   
   zipfile.readEntry();
